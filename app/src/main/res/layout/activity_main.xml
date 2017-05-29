@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Maryna Yesakova Calculator -->
+
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:columnCount="4"
+    tools:context="com.example.dexat.calculator.MarinaCalculator">
+
+    <TextView
+        android:id = "@+id/currentEntry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_columnSpan="4"
+        android:layout_gravity="end"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:textSize="32sp" />
+
+    <Button android:text="ce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_ce"
+        android:onClick="onCeClickHandler"
+        />
+
+       <Button android:text="c"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_c"
+           android:onClick="onClrClickHandler"/>
+
+       <Button android:text="del"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_del"
+           android:onClick="onDelClickHandler"/>
+
+       <Button android:text="/"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_divide"
+           android:onClick="onOpcodeClickHandler"/>
+
+       <Button android:text="7"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_7"
+           android:onClick="onNumericClickHandler"/>
+
+       <Button android:text="8"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_8"
+           android:onClick="onNumericClickHandler"/>
+
+       <Button android:text="9"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_9"
+           android:onClick="onNumericClickHandler"/>
+
+       <Button android:text="*"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_multiply"
+           android:onClick="onOpcodeClickHandler"/>
+
+       <Button android:text="4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_4"
+           android:onClick="onNumericClickHandler"/>
+
+       <Button android:text="5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_5"
+           android:onClick="onNumericClickHandler"/>
+
+       <Button android:text="6"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_6"
+           android:onClick="onNumericClickHandler"/>
+
+       <Button android:text="-"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_minus"
+           android:onClick="onOpcodeClickHandler"/>
+
+       <Button android:text="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_1"
+           android:onClick="onNumericClickHandler"/>
+
+       <Button android:text="2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_2"
+           android:onClick="onNumericClickHandler"/>
+
+       <Button android:text="3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_3"
+           android:onClick="onNumericClickHandler"/>
+
+       <Button android:text="+"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_plus"
+           android:onClick="onOpcodeClickHandler"/>
+
+       <Button android:text="+/-"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_signChange"
+           android:onClick="onSignChangeClickHandler"/>
+
+       <Button android:text="0"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_0"
+           android:onClick="onNumericClickHandler"/>
+
+       <Button android:text="."
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_decimal"
+           android:onClick="onDecimalPointClickHandler"/>
+
+       <Button android:text="="
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_equal"
+           android:onClick="onEqualClickHandler"/>
+
+       <TextView
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:layout_columnSpan="4"
+           android:id="@+id/accumulator"
+           android:text="" />
+
+       <TextView
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:layout_columnSpan="4"
+           android:id="@+id/opcode"
+           android:text="" />
+       />
+   </GridLayout>
